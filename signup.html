@@ -145,12 +145,13 @@
             }
 
             if (pwdcheck.test(password)) {
-                document.getElementById("passworderror").innerHTML = ""
+                document.getElementById("passworderror").innerHTML = "";
             } else {
                 if (password.length < 8) {
-                    document.getElementById("passworderror").innerHTML = "password length should be 8 character"
+                    document.getElementById("passworderror").innerHTML = "password length should be 8 character";
+                    return false;
                 } else {
-                    document.getElementById("passworderror").innerHTML = " ** password Invalid"
+                    document.getElementById("passworderror").innerHTML = " ** password Invalid";
                     return false;
                 }
             }
